@@ -1,0 +1,218 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+  background-image: url("https://previews.123rf.com/images/yupiramos/yupiramos1611/yupiramos161114761/68717255-fondo-de-huellas-de-ruedas-en-colores-blanco-y-negro-ilustraci%C3%B3n-vectorial.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+@media screen and (min-width: 320px) {
+}
+.clearfix:before, .clearfix:after{
+	display: table;
+	content: "";
+}
+.clearfix:after{
+	clear: both;
+}
+.cabecera .container{
+	position: fixed;
+	display: flex;
+	width: 100%;
+	margin-top: 0;
+	padding: 0; 
+	justify-content: space-between;	
+}
+.cabecera .logo{
+	width: 230px;
+	padding: 10px 0;
+	margin-left: 10px;
+}
+img{
+	border-radius:15px;
+	border: 3px solid black;
+}
+header div.container div.logo img{
+	width: 120px;
+	height: 120px;
+	margin-left: 0px;
+}
+.cabecera .menu ul{
+	list-style: none;
+	position: relative;
+	margin: 0;
+	padding: 10px;
+}
+.cabecera .menu ul li{
+	float: left;
+}
+.cabecera .menu ul li a{
+	padding: 0 20px;
+	display: block;
+	line-height: 84px;
+	border-top: solid black 2px;
+	border-bottom: solid black 2px;
+}
+.active{
+	color: lightgrey;
+	box-shadow: 0 84px 5px black inset;
+}
+.activo{
+	color: black;
+	box-shadow: 0 84px 5px lightgrey inset;
+}
+.cabecera .menu ul li a.activo:hover{
+	color:white;
+	box-shadow: 0 84px 5px black inset;
+	border-top: solid white 2px;
+	border-bottom: solid white 2px;
+}
+.cabecera .menu ul li a.active:hover{
+	color: white;
+	box-shadow: 0 84px 5px black inset;
+	border-top: solid white 2px;
+	border-bottom: solid white 2px;
+}
+.slider  p{
+	font-size: 40px;
+	width: 1000px;
+	margin-top: 200px;
+	margin-left: 380px;
+	margin-right: 390px;
+	margin-bottom: 100px;
+	padding: 20px;
+	background-color: white;
+	color:black;
+	text-align: center;
+}
+.slider {
+	width: 100%;
+	overflow: hidden;
+	padding: 0;
+}
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	margin-left: 1000px;
+	margin-top: 300px;
+	margin-bottom: 0;
+	position: relative;
+	z-index: -2;
+	animation: cambio 10s infinite alternate linear;
+}
+.slider ul li {
+	width: 100%;
+	list-style: none;
+	margin-left: 500px;
+	background-position: center;
+}
+.slider img {
+	width: 70%;
+}
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left:-300%;}
+}
+.cabecera .menu ul li .tipocoches a.active{
+	color: white;
+	box-shadow: 0 84px 5px black inset;
+}
+.tipocoches p{
+	font-size: 40px;
+	width: 1000px;
+	margin-top: 200px;
+	margin-left: 0;
+	margin-right: 420px;
+	margin-bottom: 80px;
+	padding: 20px;
+	background-color: white;
+	color: black;
+	text-align: center;
+}
+.tipocoches{
+	margin-left: 355px;
+	text-align: center;
+	text-decoration-color: black;	
+}
+.tipocoches ul{
+	display: flex;
+	width: 1200px;
+	margin-top: 50px;
+	position: relative;
+	z-index: -2;
+	list-style: none;
+	border: 10px solid black;
+	background-color: white;
+	border-radius: 20px;
+}
+.tipocoches ul li{
+	margin: auto;
+}
+.tipocoches img{
+	width: 250px;
+	height: 300px;
+	display: flex;
+	padding: 5px;
+	margin: auto;
+}
+
+.contacto a p{
+	position: relative;
+	z-index: -2;
+	font-size: 40px;
+	width: 1000px;
+	margin-top: 190px;
+	margin-left: 0;
+	margin-right: 420px;
+	margin-bottom: 80px;
+	padding: 20px;
+	background-color: white;
+	color:black;
+	text-align: center;
+}
+.contacto iframe{
+	position: relative;
+	z-index: -2;
+	width: 700px;
+	height: 450px;
+	margin-top: 80px;
+	margin-left: 380px;
+	margin-bottom: 50px;
+	border: solid black 3px;
+	border-radius: 20px;
+}
+p{
+	position: relative;
+	z-index: -2;
+	float: right;
+	font-size: 20px;
+	width: 350px;
+	margin-top: 180px;
+	margin-left: auto;
+	margin-right: 350px;
+	margin-bottom: 50px;
+	padding: 10px;
+	background-color: white;
+	color:black;
+	text-align: center;
+	border: solid black 3px;
+	border-radius: 10px;
+}
+
+

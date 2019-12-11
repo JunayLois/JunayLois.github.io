@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">
+	<meta author="Junay Lois">
+    <title>Sobre Rodas: Información</title>
+</head>
+<body>
+    <header class="cabecera">
+		<div class="container">
+			<div class="logo">
+				<img src=".\imagenes\logo.png">
+			</div>
+			<nav class="menu">
+				<ul class="clearfix">
+					<li><a class="active" href=".\index.html#indice">ÍNDICE</a></li>
+					<li><a class="activo" href=".\index.html#tipocoches">TIPOS DE COCHES</a></li>
+					<li><a class="activo" href=".\informacion.html">INFORMACIÓN</a></li>
+					<li><a class="activo" href=".\index.html#contacto">CONTACTO</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+    <div class="form"><a name="información">
+        <p>Rellena este formulario para pedir informción sobre cualquier modelo.</p>
+    </a>
+    </div>
+    <form class='información'>
+		<div>
+			<label>Nombre:</label>
+				<input type='text' id="nombre"
+					pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}"
+					required 
+				/>
+		</div>
+		<div>
+			<label>Email:</label>
+				<input type='email' value placeholder="ejemplo@dominio.com" id="email"
+					pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required 
+				/>
+		</div>
+		<div>
+			<label>Teléfono móvil:</label>
+				<input type='tel' id="telefono" pattern="[0-9]{9}" required 
+				/>
+		</div>
+		<div>
+			<label>Mensaje:</label>
+			<textarea rows='6'  placeholder="Escriba aquí el mensaje que desea enviar."type='mens'id="mensaje" pattern="." required /></textarea>
+		</div>
+		<div>
+			<input type='submit' value='Pedir información'>
+		</div>
+		<div>
+			<a href="http://www.vocento.com/politica-privacidad">
+				<input type="checkbox" name="acepto" id="politica"
+					pattern="checked='checked'" required 
+				/> He leído y acepto la Política de Privacidad.
+			</a>
+		</div>
+	</form>
+</body>
+</html>

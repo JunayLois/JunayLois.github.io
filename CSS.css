@@ -1,0 +1,191 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+  background-image: url("https://previews.123rf.com/images/yupiramos/yupiramos1611/yupiramos161114761/68717255-fondo-de-huellas-de-ruedas-en-colores-blanco-y-negro-ilustraci%C3%B3n-vectorial.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.clearfix:before, .clearfix:after{
+	display: table;
+	content: "";
+}
+.clearfix:after{
+	clear: both;
+}
+.cabecera .container{
+	position: fixed;
+	display: flex;
+	width: 100%;
+	margin-top: 0;
+	padding: 0; 
+	justify-content: space-between;	
+}
+.cabecera .logo{
+	width: 230px;
+	padding: 10px 0;
+	margin-left: 10px;
+}
+img{
+	border-radius:15px;
+	border: 3px solid black;
+}
+header div.container div.logo img{
+	width: 120px;
+	height: 120px;
+	margin-left: 0px;
+}
+.cabecera .menu ul{
+	list-style: none;
+	position: relative;
+	margin: 0;
+	padding: 10px;
+}
+.cabecera .menu ul li{
+	float: left;
+}
+.cabecera .menu ul li a{
+	padding: 0 20px;
+	display: block;
+	line-height: 84px;
+	border-top: solid black 2px;
+	border-bottom: solid black 2px;
+}
+.active{
+	color: lightgrey;
+	box-shadow: 0 84px 5px black inset;
+}
+.activo{
+	color: black;
+	box-shadow: 0 84px 5px lightgrey inset;
+}
+.cabecera .menu ul li a.activo:hover{
+	color:white;
+	box-shadow: 0 84px 5px black inset;
+	border-top: solid white 2px;
+	border-bottom: solid white 2px;
+}
+.cabecera .menu ul li a.active:hover{
+	color: white;
+	box-shadow: 0 84px 5px black inset;
+	border-top: solid white 2px;
+	border-bottom: solid white 2px;
+}
+.form p{
+	position: relative;
+	z-index: -2;
+	font-size: 40px;
+    width: 1000px;
+    margin-top: 15%;
+    margin-left: 23%;
+    display: flex;
+    justify-content: center;
+	padding: 20px;
+	background-color: white;
+	color:black;
+    text-align: center;
+    border: solid black 3px;
+    border-radius: 10px;
+}
+form {
+	margin-top: 100px;
+    padding: 200px;
+    width: 450px;
+    height:700px;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    margin-left: 35%;
+	
+}
+.información{
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 45px 45px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 5px 10px black, 0 0 0 10px black inset;
+}
+.información label{
+    display: block;
+    font-weight: lighter;
+}
+.información div{
+	margin-bottom: 50px;
+	justify-content: center;
+}
+.información input[type='text'], .información textarea{
+    padding: 7px 6px;
+    width: 400px;
+    border: 1px solid black;
+    resize: none;
+    box-shadow:0 0 0 3px black;
+	margin: 5px 0;
+	border-radius: 10px;
+}
+.información input[type='email'], .información textarea{
+    padding: 7px 6px;
+    width: 400px;
+    border: 1px solid black;
+    resize: none;
+    box-shadow: 0 0 0 3px black;
+	margin: 5px 0;
+	border-radius: 10px;
+}
+.información input[type='tel'], .información textarea{
+    padding: 7px 6px;
+    width: 400px;
+    border: 1px solid black;
+    resize: none;
+    box-shadow:0 0 0 3px black;
+	margin: 5px 0;
+	border-radius: 10px;
+}
+.información input[type='text']:focus, .información textarea:focus{
+    outline: none;
+    box-shadow:0 0 0 3px white;
+}
+.información input[type='submit']{
+    border: 1px solid white;
+    box-shadow:0 0 0 2px black;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-weight: bold;
+	background: black;
+    background: -moz-linear-gradient(top, white 0%, white 100%);
+    background: -webkit-linear-gradient(top, white 0%,white 100%);
+}
+.información input[type='submit']:hover{
+    background: black;
+    background: -moz-linear-gradient(top, black 0%, black 100%);
+	background: -webkit-linear-gradient(top, black 0%,black 100%);
+	color: white;
+}
+.información input[type='submit']:active{
+    background: white;
+    background: -moz-linear-gradient(top, white 0%, white 100%);
+	background: -webkit-linear-gradient(top, white 0%,white 100%);
+	color: black;
+}
+.información input[type='email']:invalid{
+    box-shadow: 0px 0px 10px 1px blue;
+}
+.información input[type='text']:invalid{
+    box-shadow: 0px 0px 10px 1px blue;
+}
+.información input[type='tel']:invalid{
+    box-shadow: 0px 0px 10px 1px blue;
+}
+.información textarea[type='mens']:invalid{
+    box-shadow: 0px 0px 10px 1px blue;
+}
+.información input[type='submit']:invalid{
+    box-shadow: 0px 0px 10px 1px blue;
+}
